@@ -206,7 +206,7 @@ class SetupFunctions
         $oCmd->addParams('--latlong', '--slim', '--create');
         $oCmd->addParams('--output', 'gazetteer');
         $oCmd->addParams('--hstore');
-        $oCmd->addParams('--number-processes', 1);
+        $oCmd->addParams('--number-processes', $this->iInstances);
         $oCmd->addParams('--cache', $this->iCacheMemory);
         $oCmd->addParams('--port', $this->aDSNInfo['port']);
 
